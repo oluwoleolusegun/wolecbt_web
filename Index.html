@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../../SQI-class/bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="name_box">
+         Welcome Oluwole Quiz App!!!
+        <!-- <img src="./75705-welcome-animation.gif" alt="" width="100px" style="margin: auto;"> -->
+        <p> Pls enter your name</p>
+        <input type="text" id="name-input">
+        <div id="error-txt"></div>
+    </div>
+    <div class="start_btn">
+        <button class="btn btn-danger">Start Quiz</button>
+    </div>
+
+    <div class="info_box">
+        <div class="name-display"> <span> Hi👋!! </span> ___
+            <h3 id="displayName"> </h3>
+        </div>
+        <div class="info_title">
+
+            <h4>Pls read through the Rules of the Quiz</h4>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Attempt all Questions</div>
+            <div class="info">2. You have <b>50</b> seconds to answer all questions</div>
+            <div class="info">3. When the time expires the quiz automatically submit </div>
+
+
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">CBT</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec"></div>
+            </div>
+        </header>
+        <section>
+
+            <div class="que_text">
+                <!-- <span>Which of this is a country?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">New York</div> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">Lesotho</div> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">Port-Harcourt</div> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">Brigthon</div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- <span>
+                    <p>2</p>of<p>5</p>Questions
+                </span> -->
+            </div>
+            <button class="prev_btn btn btn-info">Prev</button>
+            <button class="submit_btn btn btn-success ">Submit</button>
+            <button class="next_btn btn btn-danger">Next</button>
+
+        </footer>
+
+    </div>
+
+    <div class="result_box">
+
+        <div class="complete_text"> You've completed the quiz!
+        </div>
+        <div class="score_text">
+
+            <!-- <span style="display: flex; flex-direction: column;">and sorry, you got only <p style="font-size: 30px;">2
+                </p>out of <p style="font-size: 30px;">5</p></span> -->
+        </div>
+        <div class=" buttons">
+            <!-- <button class="restart">Replay Quiz</button> -->
+            <button class="quit">Replay Quiz</button>
+        </div>
+        <div class="correct_ans"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script(Questions).js"></script>
+</body>
+
+</html>
